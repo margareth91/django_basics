@@ -9,10 +9,18 @@
         <h1>Blog o kotkach</h1>
     </div>
     <div>
-        <h2><a href="">Kotki kotki kotki</a></h2>
+        <h2>Kotki kotki kotki</h2>
     </div>
     <div>
-        <p>Kotki kotki kotki</p>
+        <h3>Miau miau miau</h3>
     </div>
+<!--    {{ posts }}-->
+{% for post in posts %}
+    <div>
+        <p>opublikowano: {{ post.published_date }}</p>
+        <h4><a href="">{{ post.title }}</a> </h4>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 </body>
 </html>
