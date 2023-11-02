@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import mimetypes
 from pathlib import Path
-# import mimetypes
+import mimetypes
 
 mimetypes.add_type("text/css", ".css", True)
 
