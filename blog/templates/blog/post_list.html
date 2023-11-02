@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Kotki</title>
-</head>
-<body>
-    <div>
-        <h1>Blog o kotkach</h1>
-    </div>
-    <div>
-        <h2>Kotki kotki kotki</h2>
-    </div>
-    <div>
-        <h3>Miau miau miau</h3>
-    </div>
-<!--    {{ posts }}-->
-{% for post in posts %}
-    <div>
-        <p>opublikowano: {{ post.published_date }}</p>
-        <h4><a href="">{{ post.title }}</a> </h4>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-</body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                <p>opublikowano: {{ post.published_date }}</p>
+            </div>
+            <h4><a href="">{{ post.title }}</a></h4>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
