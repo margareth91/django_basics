@@ -2,12 +2,20 @@
     background-color: #FA8072;
     margin-top: 0;
     padding: 20px 20px 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+
+.page-header p, .page-header h4, .page-header h4 a, .page-header h4 a:active, .page-header h4 a:visited {
+    color: #ffffff;
+    font-size: 20pt;
 }
 
 .page-header h2, h3 {
@@ -19,8 +27,12 @@
     margin-left: 40px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Lobster', cursive;
+}
+
+h4, h5, h6 {
+    color: #006400;
 }
 
 .date {
@@ -38,7 +50,7 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 20pt;
     margin-right: 20px;
 }
 
@@ -46,6 +58,18 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h4 a, .post h4 a:visited {
+.post h4 a, .post h4 a:visited, .post h6 a, .post h6 a:visited {
     color: #006400;
 }
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+/*.post_new_edit {
+    float: right;
+}
+
+.user_welcome_logout {
+    float: right;
+}*/
